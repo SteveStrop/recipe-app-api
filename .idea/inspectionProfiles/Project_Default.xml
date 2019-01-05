@@ -16,6 +16,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="app.core.admin.*" />
+          <option value="app.user.urls.user" />
         </list>
       </option>
     </inspection_tool>
