@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b85c5d44-9d8d-46a4-b75a-6485a8a2a1e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/recipe/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/recipe/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/tests/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recipe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/recipe/test/test_tags_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="416">
+              <caret line="63" column="58" lean-forward="true" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
                 <element signature="e#367#517#0" expanded="true" />
@@ -37,6 +29,7 @@
                 <element signature="e#948#1046#0" expanded="true" />
                 <element signature="e#1113#1488#0" expanded="true" />
                 <element signature="e#1564#2055#0" expanded="true" />
+                <element signature="e#2110#2313#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,10 +89,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="380">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#541#672#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,8 +138,8 @@
         <option value="$PROJECT_DIR$/app/recipe/serialzers.py" />
         <option value="$PROJECT_DIR$/app/recipe/urls.py" />
         <option value="$PROJECT_DIR$/app/app/urls.py" />
-        <option value="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" />
         <option value="$PROJECT_DIR$/app/recipe/serializers.py" />
+        <option value="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" />
         <option value="$PROJECT_DIR$/app/recipe/views.py" />
       </list>
     </option>
@@ -294,7 +288,7 @@
       <workItem from="1546677141095" duration="4189000" />
       <workItem from="1546716245868" duration="7153000" />
       <workItem from="1546733434224" duration="2404000" />
-      <workItem from="1546772944975" duration="5944000" />
+      <workItem from="1546772944975" duration="6963000" />
     </task>
     <task id="LOCAL-00001" summary="setup Docker and Django project">
       <created>1546467414353</created>
@@ -359,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546735602165</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added working list tags endpoint">
+      <created>1546794652348</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1546794652348</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -368,13 +369,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42430000" />
+    <option name="totallyTimeSpent" value="43449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1170" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15085287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15085287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -388,7 +388,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297975" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003579" side_tool="true" weight="0.2584378" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996421" visible="true" weight="0.39151397" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4996421" visible="true" weight="0.39151397" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -447,7 +447,8 @@
     <MESSAGE value="added endpoints to create and authenticate (via token) users" />
     <MESSAGE value="added ManageUser (me) endpoint for updating authenticated users" />
     <MESSAGE value="added ManageUser (me) endpoint for updating authenticated users. V1.0 Rest API skeleton for creating and managing token authenticated users" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ManageUser (me) endpoint for updating authenticated users. V1.0 Rest API skeleton for creating and managing token authenticated users" />
+    <MESSAGE value="added working list tags endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="added working list tags endpoint" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/app/calc.py" />
@@ -642,22 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/recipe/test/test_tags_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <element signature="e#367#517#0" expanded="true" />
-            <element signature="e#413#436#0" expanded="true" />
-            <element signature="e#481#595#0" expanded="true" />
-            <element signature="e#948#1046#0" expanded="true" />
-            <element signature="e#1113#1488#0" expanded="true" />
-            <element signature="e#1564#2055#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -688,12 +673,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/recipe/test/test_tags_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="63" column="58" lean-forward="true" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#367#517#0" expanded="true" />
+            <element signature="e#413#436#0" expanded="true" />
+            <element signature="e#481#595#0" expanded="true" />
+            <element signature="e#948#1046#0" expanded="true" />
+            <element signature="e#1113#1488#0" expanded="true" />
+            <element signature="e#1564#2055#0" expanded="true" />
+            <element signature="e#2110#2313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="380">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#541#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
