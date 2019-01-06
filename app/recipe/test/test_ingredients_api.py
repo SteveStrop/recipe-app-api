@@ -21,7 +21,7 @@ class PublicIngredientsApiTests(TestCase):
         self.client = APIClient()
 
     def test_login_required(self):
-        """Test login required to retrieve ingredients"""
+        """Test login required to access endpoints"""
         response = self.client.get(INGREDIENTS_URL)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
@@ -34,8 +34,8 @@ class PrivateIngredientsApiTests(TestCase):
         self.user = create_user()
         self.client.force_authenticate(self.user)
 
-    def test_retrieve_ingredients(self):
-        """Test ingredients tags"""
+    def test_retrieve_ingredient_list(self):
+        """Test retrieving a list of ingredients"""
         Ingredient.objects.create(user=self.user, name='Beef')
         Ingredient.objects.create(user=self.user, name='Salt')
         response = self.client.get(INGREDIENTS_URL)
@@ -46,7 +46,7 @@ class PrivateIngredientsApiTests(TestCase):
 
     def test_ingredients_limited_to_user(self):
         """Test ingredients for authenticated user only"""
-        user1 = create_user("123", "bob@mail.com")
+        user1 = create_user(password="123", email="bob@mail.com")
         Ingredient.objects.create(user=user1, name="Fruit")
         ingredient = Ingredient.objects.create(user=self.user, name="Bollox")
         response = self.client.get(INGREDIENTS_URL)
@@ -54,14 +54,15 @@ class PrivateIngredientsApiTests(TestCase):
         self.assertEqual(len(response.data), 1)  # check only one element returned
         self.assertEqual(response.data[0]['name'], ingredient.name)  # check it's the right one
 
-    # def test_create_tag_successful(self):
-    #     """Test creating a new ingredient"""
-    #     payload = {'name': 'Test tag'}
-    #     self.client.post(TAGS_URL, payload)
-    #     self.assertTrue(Tag.objects.filter(user=self.user, name=payload['name']).exists())
-    #
-    # def tes_create_tag_invalid(self):
-    #     """Test creating a new tag with invalid payload"""
-    #     payload = {'name': ''}
-    #     response = self.client.post(TAGS_URL, payload)
-    #     self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    def test_create_ingredient_successful(self):
+        """Test creating a new ingredient"""
+        payload = {'name': 'Cabbage'}
+        self.client.post(INGREDIENTS_URL, payload)
+        self.assertTrue(Ingredient.objects.filter(user=self.user, name=payload['name']).exists())
+
+    def test_create_ingredient_invalid(self):
+        """Test creating a new ingredient with invalid payload"""
+        payload = {'name': ''}
+        response = self.client.post(INGREDIENTS_URL, payload)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
