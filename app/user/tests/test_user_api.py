@@ -4,8 +4,9 @@ from django.urls import reverse
 from rest_framework.test import APIClient
 from rest_framework import status  # HTTP status codes
 
-CREATE_USER_URL = reverse('user:create')
+CREATE_USER_URL = reverse('user:create')  # the endpoint urls
 TOKEN_URL = reverse('user:token')
+ME_URL = reverse('user:me')
 
 
 # helper function to clean up code below. Creates a user directly without going through the APIClient
@@ -101,3 +102,40 @@ class PublicUserApiTests(TestCase):  # for non authenticated access i.e. create 
         response = self.client.post(path=TOKEN_URL, data=payload_invalid)
         self.assertNotIn('token', response.data)  # make sure no 'token key in response data
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_retrieve_user_unauthorised(self):
+        """Test that authentication is required for users"""
+        # try and get a user with no credentials
+        response = self.client.get(path=ME_URL)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+
+
+class PrivateUserApiTests(TestCase):
+    """Tests for API requests requiring authentication"""
+
+    def setUp(self):
+        """Create authenticated user"""
+        payload = {'email': 'test@steve.com', 'password': 'testPass2', 'name': 'Steve'}
+        self.user = create_user(**payload)
+        self.client = APIClient()
+        self.client.force_authenticate(user=self.user)  # authenticate the test user
+
+    def test_retrieve_profile_success(self):
+        """Test retrieving profile for logged-in used"""
+        response = self.client.get(path=ME_URL)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data, {'email': self.user.email, 'name': self.user.name})
+
+    def test_post_me_not_allowed(self):
+        """Test POST not allowed on me url"""
+        response = self.client.post(path=ME_URL, data={})
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_update_user_profile(self):
+        """Test updating user profile for authenticated users"""
+        payload = {'name': 'John', 'password': 'newPass'}
+        response = self.client.patch(path=ME_URL, data=payload)
+        self.user.refresh_from_db()
+        self.assertEqual(self.user.name, payload['name'])
+        self.assertTrue(self.user.check_password(payload['password']))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
