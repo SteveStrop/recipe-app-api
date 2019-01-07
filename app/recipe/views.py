@@ -1,8 +1,8 @@
 from rest_framework import viewsets, mixins
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-from core.models import Tag, Ingredient, Recipe
-from recipe import serializers
+from app.core.models import Tag, Ingredient, Recipe
+from app.recipe import serializers
 
 
 class BaseRecipeAttributesViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.CreateModelMixin):
