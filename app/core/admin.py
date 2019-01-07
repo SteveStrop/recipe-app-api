@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext as _
 
-from app.core import models  # looks like I gotta live with this?? it works ok used to say .core or just core?
+from core import models  # looks like I gotta live with this?? it works ok used to say .core or just core?
 
 
 class UserAdmin(BaseUserAdmin):
