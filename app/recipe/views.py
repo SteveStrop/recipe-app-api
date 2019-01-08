@@ -18,11 +18,37 @@ class BaseRecipeAttributesViewSet(viewsets.GenericViewSet, mixins.ListModelMixin
         """Create a new attribute"""
         serializer.save(user=self.request.user)
 
-class TagViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
+
+class TagViewSet(BaseRecipeAttributesViewSet):
     """Manage tags in the database"""
     queryset = Tag.objects.all()
     serializer_class = serializers.TagSerializer
 
+
+class IngredientViewSet(BaseRecipeAttributesViewSet):
+    """Manage ingredients in the database"""
+    queryset = Ingredient.objects.all()
+    serializer_class = serializers.IngredientSerializer
+
+
+class RecipeViewSet(viewsets.ModelViewSet):
+    """Manage recipes in the database"""
+
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+    queryset = Recipe.objects.all()
+    serializer_class = serializers.RecipeSerializer
+
     def get_queryset(self):
-        """Return objects for the current authenticated user only"""
-        return self.queryset.filter(user=self.request.user).order_by('-name')
+        """Return recipes  for the current authenticated user only"""
+        return self.queryset.filter(user=self.request.user)  # .order_by('-name')
+
+    def get_serializer_class(self):
+        """Return appropriate serializer """
+        if self.action == 'retrieve':
+            return serializers.RecipeDetailSerializer
+        return self.serializer_class
+
+    def perform_create(self, serializer):
+        """Create a new recipe"""
+        serializer.save(user=self.request.user)
