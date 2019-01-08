@@ -13,8 +13,13 @@ class BaseRecipeAttributesViewSet(viewsets.GenericViewSet, mixins.ListModelMixin
     permission_classes = (IsAuthenticated,)
 
     def get_queryset(self):
-        """Return objects for the current authenticated user only"""
-        return self.queryset.filter(user=self.request.user).order_by('-name')
+        """Return objects for current authenticated user"""
+        assigned_only = bool(self.request.query_params.get('assigned_only'))
+        queryset = self.queryset
+        if assigned_only:
+            queryset = queryset.filter(recipe__isnull=False)  # lower case version of class name of reverse foreign key
+
+        return queryset.filter(user=self.request.user).order_by('-name')
 
     def perform_create(self, serializer):
         """Create a new attribute"""
@@ -41,7 +46,8 @@ class RecipeViewSet(viewsets.ModelViewSet):
     queryset = Recipe.objects.all()
     serializer_class = serializers.RecipeSerializer
 
-    def _params_to_ints(self, queryset):
+    @staticmethod
+    def _params_to_ints(queryset):
         """Convert a list of string IDs to integers"""
         return [int(str_id) for str_id in queryset.split(',')]
 
