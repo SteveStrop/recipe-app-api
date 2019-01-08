@@ -6,7 +6,6 @@ from rest_framework.test import APIClient
 from core.models import Recipe, Tag, Ingredient
 from recipe.serializers import RecipeSerializer, RecipeDetailSerializer
 
-
 RECIPE_URL = reverse('recipe:recipe-list')
 
 
@@ -126,7 +125,7 @@ class PrivateRecipeApiTests(TestCase):
     def test_create_recipe_with_ingredients(self):
         """"Test creating a recipe with ingredients"""
         ingredient1 = sample_ingredient(user=self.user, name="prawns")
-        ingredient2 = sample_ingredient(user=self.user, name="gingert")
+        ingredient2 = sample_ingredient(user=self.user, name="ginger")
         payload = {
                 'title':        'Thai cheesecake',
                 'ingredients':  [ingredient1.id, ingredient2.id],
@@ -140,3 +139,31 @@ class PrivateRecipeApiTests(TestCase):
         self.assertEqual(ingredients.count(), 2)
         self.assertIn(ingredient1, ingredients)
         self.assertIn(ingredient2, ingredients)
+
+    def test_partial_update_recipe(self):
+        """Test updating a recipe with patch"""
+        recipe = sample_recipe(user=self.user)
+        recipe.tags.add(sample_tag(user=self.user))
+        new_tag = sample_tag(user=self.user, name='curry')
+        payload = {'title': 'Chicken tikka', 'tags': [new_tag.id]}
+        self.client.patch(detail_url(recipe.id), payload)
+        recipe.refresh_from_db()  # need to refresh after a patch
+        self.assertEqual(recipe.title, payload['title'])
+        tags = recipe.tags.all()
+        self.assertEqual(len(tags), 1)  # alternative to using .count
+        self.assertIn(new_tag, tags)
+
+    def test_full_update_recipe(self):
+        """Test updating with put"""  # put will remove any fields not specified
+        recipe = sample_recipe(user=self.user)
+        recipe.tags.add(sample_tag(user=self.user))
+        new_tag = sample_tag(user=self.user, name='curry')
+        payload = {'title': 'Fishy love', 'time_minutes': 25, 'price': 5.00}
+        self.client.put(detail_url(recipe.id), payload)
+        recipe.refresh_from_db()  # need to refresh after a put
+        self.assertEqual(recipe.title, payload['title'])
+        self.assertEqual(recipe.time_minutes, payload['time_minutes'])
+        self.assertEqual(recipe.price, payload['price'])
+        # tags should have ben cleared as this is a put
+        tags = recipe.tags.all()
+        self.assertEqual(len(tags), 0)

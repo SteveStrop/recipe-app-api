@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b85c5d44-9d8d-46a4-b75a-6485a8a2a1e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/recipe-app-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/recipe-app-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/tests/test_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recipe/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/recipe/test/test_ingredients_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/test/test_ingredients_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/recipe/test/test_recipe_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/test/test_recipe_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recipe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/views.py" afterDir="false" />
     </list>
-    <list id="ea208965-7869-4713-a931-dbc339fed473" name="added working list tags endpoint" comment="">
-      <change beforePath="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recipe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/views.py" afterDir="false" />
-    </list>
+    <list id="ea208965-7869-4713-a931-dbc339fed473" name="added working list tags endpoint" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,108 +22,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
+        <entry file="file://$PROJECT_DIR$/app/recipe/test/test_ingredients_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="533">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/core/models.py">
+        <entry file="file://$PROJECT_DIR$/app/recipe/test/test_recipe_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+            <state relative-caret-position="533">
+              <caret line="167" column="32" selection-start-line="167" selection-start-column="32" selection-end-line="167" selection-end-column="32" />
               <folding>
-                <element signature="e#0#90#0" expanded="true" />
-                <element signature="e#2125#2141#0" expanded="true" />
-                <element signature="e#2407#2423#0" expanded="true" />
+                <element signature="e#0#46#0" expanded="true" />
+                <element signature="e#3073#3439#0" expanded="true" />
+                <element signature="e#3489#3963#0" expanded="true" />
+                <element signature="e#4017#4710#0" expanded="true" />
+                <element signature="e#4770#5562#0" expanded="true" />
+                <element signature="e#5612#6173#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/recipe/test/test_ingredients_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/core/tests/test_models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/core/tests/test_commands.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/core/tests/test_admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/core/management/commands/wait_for_db.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#63#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/recipe/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/recipe/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/recipe/apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -177,31 +94,13 @@
         <option value="$PROJECT_DIR$/app/recipe/urls.py" />
         <option value="$PROJECT_DIR$/app/recipe/test/test_tags_api.py" />
         <option value="$PROJECT_DIR$/app/core/admin.py" />
-        <option value="$PROJECT_DIR$/app/recipe/test/test_recipe_api.py" />
-        <option value="$PROJECT_DIR$/app/recipe/test/test_ingredients_api.py" />
         <option value="$PROJECT_DIR$/app/recipe/views.py" />
         <option value="$PROJECT_DIR$/app/recipe/serializers.py" />
         <option value="$PROJECT_DIR$/app/core/tests/test_models.py" />
+        <option value="$PROJECT_DIR$/app/recipe/test/test_ingredients_api.py" />
+        <option value="$PROJECT_DIR$/app/recipe/test/test_recipe_api.py" />
       </list>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/app/recipe/test/test_tags_api.py">
-      <ranges>
-        <range start1="5" end1="7" start2="5" end2="7" changelist="b85c5d44-9d8d-46a4-b75a-6485a8a2a1e3" />
-        <range start1="8" end1="9" start2="8" end2="8" changelist="ea208965-7869-4713-a931-dbc339fed473" />
-        <range start1="54" end1="56" start2="53" end2="55" changelist="ea208965-7869-4713-a931-dbc339fed473" />
-        <range start1="57" end1="57" start2="56" end2="68" changelist="ea208965-7869-4713-a931-dbc339fed473" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/app/recipe/views.py">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="5" changelist="b85c5d44-9d8d-46a4-b75a-6485a8a2a1e3" />
-        <range start1="20" end1="21" start2="20" end2="22" changelist="ea208965-7869-4713-a931-dbc339fed473" />
-        <range start1="25" end1="25" start2="26" end2="41" changelist="ea208965-7869-4713-a931-dbc339fed473" />
-        <range start1="26" end1="28" start2="42" end2="54" changelist="ea208965-7869-4713-a931-dbc339fed473" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -211,10 +110,12 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType ProjectPane="true" />
       <foldersAlwaysOnTop value="false" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,76 +132,13 @@
               <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="apps.py" type="8704e2dd:PyFileNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="models.py" type="8704e2dd:PyFileNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="recipe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="recipe" type="462c0819:PsiDirectoryNode" />
-              <item name="apps.py" type="8704e2dd:PyFileNode" />
-            </path>
-            <path>
-              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="recipe" type="462c0819:PsiDirectoryNode" />
-              <item name="serializers.py" type="8704e2dd:PyFileNode" />
             </path>
             <path>
               <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
@@ -309,11 +147,18 @@
               <item name="recipe" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="recipe-app-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="recipe" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="test_ingredients_api.py" type="8704e2dd:PyFileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546899869103</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added create recipe with tags and ingredients. Added migrations to commit fixing docker errors">
+      <created>1546932278368</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1546932278368</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -568,12 +420,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62900000" />
+    <option name="totallyTimeSpent" value="64552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1170" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -584,10 +437,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.6441659" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297975" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3297975" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003579" side_tool="true" weight="0.2584378" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4996421" visible="true" weight="0.38669237" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996421" weight="0.38669237" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -654,7 +507,8 @@
     <MESSAGE value="added recipe listing feature" />
     <MESSAGE value="added recipe detail view" />
     <MESSAGE value="added create recipe with tags and ingredients. Added migrations to commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="added create recipe with tags and ingredients. Added migrations to commit" />
+    <MESSAGE value="added create recipe with tags and ingredients. Added migrations to commit fixing docker errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="added create recipe with tags and ingredients. Added migrations to commit fixing docker errors" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/app/calc.py" />
@@ -675,8 +529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="171">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -742,8 +596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="342">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -759,8 +613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="190">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -829,38 +683,22 @@
     <entry file="file://$PROJECT_DIR$/app/core/management/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/recipe/test/test_tags_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/recipe/test/test_recipe_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/recipe/test/test_ingredients_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#1481#1624#0" expanded="true" />
+            <element signature="e#1670#1835#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/recipe/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="76">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -926,6 +764,41 @@
             <element signature="e#0#90#0" expanded="true" />
             <element signature="e#2125#2141#0" expanded="true" />
             <element signature="e#2407#2423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/recipe/test/test_tags_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/recipe/test/test_ingredients_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/recipe/test/test_recipe_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="167" column="32" selection-start-line="167" selection-start-column="32" selection-end-line="167" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#3073#3439#0" expanded="true" />
+            <element signature="e#3489#3963#0" expanded="true" />
+            <element signature="e#4017#4710#0" expanded="true" />
+            <element signature="e#4770#5562#0" expanded="true" />
+            <element signature="e#5612#6173#0" expanded="true" />
           </folding>
         </state>
       </provider>
